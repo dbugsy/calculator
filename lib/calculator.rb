@@ -1,18 +1,18 @@
 require_relative 'printer'
 
 class Calculator
-attr_accessor :p
-
-def initialize
-  @p = Printer.new
-end
 
   def add(a,b)
-    @p.pretty_print(a + b)
+    output(a+b)
   end
 
   def subtract(a,b)
-
-    @p.pretty_print(a - b)
+    output(a-b)
   end
+
+  def output(number)
+     Printer.new.pretty_print(number)
+     #using SRP, we could use an initialize method to create the Printer alone, without the print method being called
+  end
+
 end
