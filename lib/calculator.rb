@@ -1,5 +1,3 @@
-require_relative 'printer'
-
 class Calculator
   def add(a,b)
     a + b
