@@ -9,4 +9,5 @@ describe Calculator do
   it '#subtract' do
     expect(calculator.subtract(1,1)).to eq 0
   end
+  
 end
