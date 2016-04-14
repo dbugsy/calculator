@@ -1,4 +1,5 @@
 require 'printer'
+
 describe Printer do
   subject(:printer){ described_class.new }
   it 'produces a pretty string' do
